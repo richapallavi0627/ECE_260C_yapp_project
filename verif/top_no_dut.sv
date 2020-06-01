@@ -78,6 +78,10 @@ module top;
     .hdata(hbus0.hdata_w),
     .hen(hbus0.hen),
     .hwr_rd(hbus0.hwr_rd)
-   );                            
+   );   
+  
+   initial begin
+    $dumpvars(0,top); 
+   end
 
 endmodule
